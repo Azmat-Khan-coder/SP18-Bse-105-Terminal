@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Home Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://kit.fontawesome.com/8682125e4c.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./CSS/style.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="./jquery/myJquery.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item ">
+                     <a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">Typography</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item float-right">
+                     <a href="./add.html" class="btn btn-primary text-center">Add Product</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container bg-light">
+         <div class="row">
+            <div class="col-md-12 pt-3">
+               <h1 class="text-center font-weight-bolder">Seller</h1>
+            </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-md-1 col-sm-1">
+               Tshirts
+            </div>
+            <div class="col-md-1 col-sm-1">
+               Hoodies
+            </div>
+            <div class="col-md-1 col-sm-1">
+               Posters
+            </div>
+            <div class="col-md-1 col-sm-1">
+               Albums
+            </div>
+            <div class="col-md-1 col-sm-1">
+               <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="col-md-3"></div>
+         </div>
+      </div>
+      <div class="container mt-3 bg-light">
+         <div id="productsApi" class="row p-5">
+            <div class="col-md-3 col-sm-12">
+               <div class="card" style="width: 15rem;">
+                  <img src="images/product_1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title text-center text-primary">Happy Ninja</h5>
+                     <h6 class="card-title text-center text-dark font-weight-bolder">$10.0</h6>
+                     <section class='rating-widget'>
+  
+                        <!-- Rating Stars Box -->
+                        <div class='rating-stars text-center'>
+                          <ul id='stars'>
+                            <li class='star' title='Poor' data-value='1'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Fair' data-value='2'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Good' data-value='3'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'>
+                              <i class='fa fa-star fa-fw'></i>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div class='success-box'>
+                          <div class='clearfix'></div>
+                          <img alt='tick image' width='32' src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K'/>
+                          <div class='text-message'></div>
+                          <div class='clearfix'></div>
+                        </div>
+                      </section>
+                     <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-dark text-center">Add to Cart</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </body>
+</html>
